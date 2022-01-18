@@ -137,6 +137,10 @@ const controlAddRecipe = async function (newRecipe) {
   }
 };
 
+const newFeature = function() {
+  console.log('Welcome to the site')
+}
+
 // this method initializes the page on load
 const init = function () {
   // calls the 'handler' methods based on Publisher-Subscriber pattern
@@ -147,6 +151,7 @@ const init = function () {
   paginationView.addHandlerPagination(controlPagination);
   recipeView.addHandlerUpdateServings(controlServings);
   addRecipeView.addHandlerUpload(controlAddRecipe);
+  newFeature()
 };
 
 init();
